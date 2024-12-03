@@ -1,0 +1,992 @@
+
+body {
+    background-color: #18273f;
+    max-width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #151f32;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid red;
+    border-radius: 20px;
+    padding: 2px;
+    margin: 0 10px;
+}
+
+.logo h1 {
+    font-size: 36px;
+    color: white;
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.user-search {
+    display: flex;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    margin-left: 0;
+}
+
+.search-container input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 80px;
+    height: 30px;
+    width: 200px;
+}
+
+.search-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    right: 50px;
+}
+
+.search-container button img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 65px;
+    top: 3px;
+}
+.user-icon{
+    display: none;
+}
+.user-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid red;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    margin: 0px 45px;
+    margin-bottom: 20px;
+}
+
+.lista ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.lista ul li {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+
+.lista ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Posição logo abaixo do li pai */
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 124px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#n1 li:hover{
+    background-color: #dfc51c;
+    border-radius: 0;
+}
+#n2 li:hover{
+    background-color: #0d7588;
+    border-radius: 0;
+}
+#n3 li:hover{
+    background-color: #d4a68b;
+    border-radius: 0;
+}
+#n4 li:hover{
+    background-color: #51a70a;
+    border-radius: 0;
+}
+#n5 li:hover{
+    background-color: #e20303;
+    border-radius: 0;
+}
+#n6 li:hover{
+    background-color: #dfc51c;
+    border-radius: 0;
+}
+#pt1 {
+    color: #EECF00;
+}
+
+#pt2 {
+    color: #037E94;
+}
+
+#pt3 {
+    color: #E3B59B;
+}
+
+#pt4 {
+    color: #5bb80e;
+}
+
+#pt5 {
+    color: #FF0000;
+}
+
+#pt6 {
+    color: #EECF00;
+}
+
+#pt1:hover,
+#pt2:hover,
+#pt3:hover,
+#pt4:hover,
+#pt5:hover,
+#pt6:hover {
+    color: white;
+}
+
+#n1 {
+    background-color: #EECF00;
+    width: 123.3px;
+}
+
+#n2 {
+    background-color: #037E94;
+    width: 126.6px;
+}
+
+#n3 {
+    background-color: #E3B59B;
+    width: 133.333px;
+}
+
+#n4 {
+    background-color: #5bb80e;
+    width: 120px;
+}
+
+#n5 {
+    background-color: #FF0000;
+    width: 198.217px;
+}
+
+#n6 {
+    background-color: #EECF00;
+    width: 176.383px;
+}
+
+#c1:hover {
+    background-color: #EECF00;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#c2:hover {
+    background-color: #037E94;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#c3:hover {
+    background-color: #E3B59B;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#c4:hover {
+    background-color: #5bb80e;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#c5:hover {
+    background-color: #FF0000;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#c6:hover {
+    background-color: #EECF00;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.lastItem:hover{
+    border-radius: 0 0 10px 10px !important;
+}
+
+.lista ul li:hover ul {
+    display: block;
+}
+
+.lista ul li ul li {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+li:hover {
+    border-radius: 30px 30px 0 0;
+}
+
+
+.login {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    text-align: center;
+    width: 55vh;
+    height: 70vh;
+    top: 130px;
+    left: 500px;
+}
+
+.lotitulos p {
+    margin-top: 0px;
+
+}
+
+.lotitulos h1 {
+    margin-bottom: 1px;
+}
+
+.loinput {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+
+}
+
+.loinput input {
+    width: 40vh;
+    margin-left: 50px;
+    margin-right: 0px;
+    border-radius: 10px;
+    height: 3vh;
+
+}
+
+.loinput p {
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.loinput a {
+    margin-left: 53px;
+    margin-bottom: 20px;
+}
+
+.login button {
+    background-color: blueviolet;
+    border: none;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.loinput hr {
+    margin-bottom: 0px;
+}
+
+.login img {
+    width: 100px;
+}
+
+.user {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    color: white;
+    height: 32vh;
+    width: 21vh;
+    top: 50px;
+    left: 37vh;
+    border-radius: 20px;
+}
+
+.user div {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.user p {
+    margin-left: 10px;
+}
+
+.user-icon :hover {
+    border: 3px solid grey;
+}
+
+.user-icon:hover .user {
+    display: block;
+}
+
+/* conteudo texto abaixo */
+
+
+.principal {
+    display: flex;
+    width: 200vh;
+    height: 5vh;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    align-items: center;
+    color: white;
+}
+
+.principal h1 {
+    font-size: 45px;
+}
+
+.principal img {
+    margin-top: 1px;
+    width: 6vh;
+    height: 6vh;
+    margin-right: 6px;
+}
+
+.principal #ouvir {
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+    text-align: center;
+    margin-bottom: 10vh;
+    margin-right: 20px;
+    margin-top: 10vh;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.quebrar {
+    color: white;
+    margin-left: 7vh;
+    max-width: 187vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.tudo p {
+    width: 10px;
+}
+
+.container {
+    display: flex;
+    color: white;
+    max-width: 184.5vh;
+  
+}
+
+.basqueimg img {
+    width: 75vh;
+    height: 40vh;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+
+#compartilhar {
+    height: 4vh;
+    width: 4vh;
+
+}
+
+.p1 {
+    margin-bottom: 10px;
+    margin-left: 46px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.container .foco p {
+    display: flex;
+    width: 510px;
+    margin-left: 5vh;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.container .foco {
+    background-color: #151f32;
+    width: 620px;
+    border-radius: 20px;
+    margin-left: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.anuncio {
+    background-color: white;
+    color: black;
+    width: 580px;
+
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.direita {
+    margin-left: 40px;
+    width: 80vh;
+}
+
+.direita .video video {
+    background-color: #142135;
+    width: 100%;
+}
+.direita .video{
+    background-color:#142135;
+    border-radius: 5px;
+}
+
+.direita .video h1{
+    margin-top: 0;
+    padding: 10px 0 0 10px;
+    font-size: 25px;
+}
+
+.direita .artigos {
+    background-color: #151f32;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 0px 15px 15px 15px;
+}
+
+#relacionados {
+    background-color: #151f32;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    font-size: 20px;
+    width: 280px;
+    border-radius: 5px 5px 0px 0px;
+    padding-top: 5px;
+}
+
+.artigos p {
+    width: 70vh;
+}
+
+#j1 p {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+#j2 p {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+#j3 p {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+#grudar a, #grudar2 a, #grudar3 a{
+    text-decoration: none;
+    color: white;
+}
+
+#grudar {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+}
+
+#grudar hr {
+    width: 50vh;
+    height: 2px;
+    color: white;
+    background-color: white;
+}
+
+#grudar h1 {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+#grudar2 {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    margin-bottom: 3px;
+}
+
+#grudar2 h1 {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+#grudar2 hr {
+    width: 310px;
+    height: 2px;
+    color: white;
+    background-color: white;
+}
+
+#grudar3 {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    margin-bottom: 3px;
+}
+
+#grudar3 hr {
+    width: 330px;
+    height: 2px;
+    color: white;
+    background-color: white;
+
+}
+
+#grudar3 h1 {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.boton button {
+    width: 65vh;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(90, 90, 211);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* acaba aqui o section */
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    background-color: #151f32;
+}
+
+
+/* CARACTERISTICAS ARTIGOS*/
+.inicio_paragrafo{
+    text-indent: 24px;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.5em;
+}
+
+.titulo_paragrafo{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* Estilo do botão */
+
+.direita #btnReferencias {
+    justify-content: center;
+}
+#btnReferencias {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 290px;
+    border-radius: 5px;
+    margin-left: 13vh;
+}
+
+/* Estilo da sobreposição (fundo escuro) */
+#overlay {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Para ficar sobre o conteúdo */
+}
+
+/* Estilo do quadrado de referências */
+#referencias {
+    width: 60%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+}
+
+/* Estilo do botão de fechar */
+#fecharReferencias {
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#referencias ul{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: justify;
+}
+#referencias ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.alinhamento{
+    width: 1215px;
+    background-color: #151f32;
+    border-radius: 0px 10px 10px 10px;
+}
+#firstParag{
+    padding-top: 10px;
+}
+
+.artigos a{
+    color: white;
+}
+
+.search-articles{
+    display: block;
+}
+
+#results{
+    color: white;
+    line-height: 1.25em;
+    margin-left: 5%;
+}
+
+#results div{
+    font-size: 20px;
+    padding: 0 0 2% 0;
+}
+
+.lista ul li ul a{
+    text-decoration: none;
+}
+
+/*ta funcionando mas ta errado, n apaga pf*/
+
+#an1:hover,#an2:hover{
+    background-color: #dfc51c;
+    border-radius: 0 !important;
+}
+#an3:hover{
+    background-color: #dfc51c;
+    border-radius: 0px 0px 10px 10px !important;
+    
+}
+#bn1:hover,#bn2:hover{
+    background-color:#0d7588;
+    border-radius: 0 !important;
+}
+#bn3:hover{
+    background-color:#0d7588;
+    border-radius: 0px 0px 10px 10px !important;
+}
+#cn1:hover,#cn2:hover,#cn3:hover,#cn4:hover{
+    background-color:#d4a68b;
+    border-radius: 0 !important;
+}
+#cn5:hover{
+    background-color:#d4a68b;
+    border-radius: 0px 0px 10px 10px !important;
+}
+#dn1:hover,#dn2:hover,#dn3:hover,#dn4:hover{
+    background-color:#51a70a;
+    border-radius: 0 !important;
+}
+#dn5:hover{
+    background-color:#51a70a;
+    border-radius: 0px 0px 10px 10px !important;
+}
+#en1:hover{
+    background-color: #e20303;
+    border-radius: 0 !important;
+}
+#en2:hover{
+    background-color: #e20303;
+    border-radius: 0px 0px 10px 10px !important;
+}
+#fn1:hover, #fn2:hover{
+    background-color: #dfc51c;
+    border-radius: 0 !important;
+}
+#fn3:hover{
+    background-color: #dfc51c;
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+#copyButton:hover{
+    cursor: pointer;
+    background-color: gray;
+    padding: 1px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+   .body {
+    max-width: 100vh;
+   }
+   .header-container{
+    display: block;
+    align-items: center;
+    text-align: center;
+    
+ }
+ .header-container .search-container {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+
+ 
+}
+.user-search {
+    display: flex;
+}
+
+.search-container {
+   
+    position: static;
+   
+}
+
+.search-container input {
+    
+    position: static;
+    
+}
+
+.search-container button {
+  
+    right: 16%
+}
+
+.search-container button img {
+   
+    position:static;
+   
+}
+
+    .tudo {
+        width: 100%;
+    }
+    .quebrar {
+        width: 100%;
+        font-size: 5px;
+        margin-left: 4px;
+    }
+    .quebrar .principal {
+        width: 100%;
+        margin-left: 5px;
+        
+    }
+     .principal h1{
+        font-size: 20px;
+        width: 37vh;
+     }
+     .principal #ouvir {
+        margin: 0;
+        font-size: 17px;
+        width: 8vh ;
+     }
+     .principal #copyButton {
+        display: none;
+
+     }
+     .p1 {
+        margin-left: 5px;
+        font-size: 17px;
+        width: 94%;
+        
+     }
+     .container {
+        margin-left: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+     }
+     .left {
+        margin-left: 5px;
+        width: 100%;
+     }
+     .basqueimg  img {
+        margin: 0;
+        width: 90%;
+        height: 100%;
+     }
+     .ambos .foco {
+        margin-left: 5px;
+        width: 90%;
+        font-size: 12px;
+     }
+     .foco ul {
+        margin-left: 0;
+     }
+     .direita{
+        margin-left: 5px;
+        width: 90%;
+     }
+     .direita .video video {
+        width: 41vh;
+        height: 20vh;
+     }
+     #btnReferencias{
+       
+        width: 60%;
+     }
+     .boton {
+        width: 100%;
+     }
+     .boton button {
+        width: 40vh;
+     }
+
+     .logo   h1 {
+        
+        width: 10vh;
+        position: static;
+        align-items: center;
+        text-align: center;
+        
+     }
+     .logo {
+        width: 10vh;
+        position: static;
+        align-items: center;
+        justify-content: center;
+        
+     }
+      .social-icons {
+        width: 14vh;
+        justify-content: space-between;
+     }
+     .social-icons img {
+        width: 1vh;
+        height: 1vh;
+     }
+     input {
+        width: 10px;
+        
+     }
+      .search-container {
+        position: static;
+        width: 13vh;
+      }
+      .search-container #search-area {
+        position: static;
+        width: 13vh;
+      }
+      .search-container input {
+        position: static;
+        width: 6vh;
+        height: 2vh;
+        min-width: 30%;
+     
+        
+        
+      }
+      .search-container button img {
+        display: none;
+      }
+      .search-container button {
+        height: 5vh;
+        position: absolute;
+        top: 2vh;
+      }
+       body header .header-container {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        
+        
+      }
+       .header-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        
+       }
+       .login {
+        display: none;
+       }
+       .alinhamento {
+        width: 90%;
+       }
+       .inicio_paragrafo img  {
+        width: 100%;
+       }
+     }
