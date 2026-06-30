@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Wars Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>⚔️ Human Wars Simulator</h1>
+    <p>Simulação de batalhas entre espécies humanas pré-históricas</p>
+
+    <div class="container">
+
+        <!-- ===================== TIME 1 ===================== -->
+        <div class="card">
+            <h2>🛡️ Time 1</h2>
+
+            <label>Espécie</label>
+            <select id="especie1">
+                <option>Homo sapiens</option>
+                <option>Neandertal</option>
+                <option>Homo erectus</option>
+                <option>Homo habilis</option>
+                <option>Denisovano</option>
+            </select>
+
+            <label>Quantidade</label>
+            <input type="number" id="qtd1" value="100" min="1" max="1000">
+
+            <label>Arma</label>
+            <select id="arma1">
+                <option>Nenhuma</option>
+                <option>Pedra</option>
+                <option>Clava</option>
+                <option>Lança</option>
+                <option>Machado de Pedra</option>
+                <option>Arco</option>
+            </select>
+
+            <label>Estratégia</label>
+            <select id="estrategia1">
+                <option>Ataque Frontal</option>
+                <option>Defesa</option>
+                <option>Emboscada</option>
+                <option>Guerrilha</option>
+                <option>Cerco</option>
+            </select>
+
+            <label>Treinamento</label>
+            <select id="treino1">
+                <option>Nenhum</option>
+                <option>Básico</option>
+                <option>Caçadores</option>
+                <option>Guerreiros</option>
+                <option>Veteranos</option>
+            </select>
+
+            <label>Moral</label>
+            <select id="moral1">
+                <option>Muito Baixa</option>
+                <option>Baixa</option>
+                <option>Normal</option>
+                <option>Alta</option>
+                <option>Extremamente Alta</option>
+            </select>
+
+            <label>Líder</label>
+            <select id="lider1">
+                <option>Sem líder</option>
+                <option>Líder comum</option>
+                <option>Grande estrategista</option>
+            </select>
+
+            <label>Alimentação</label>
+            <select id="alimentacao1">
+                <option>Famintos</option>
+                <option>Normal</option>
+                <option>Bem alimentados</option>
+            </select>
+
+            <label>Tecnologia</label>
+            <select id="tecnologia1">
+                <option>Ferramentas simples</option>
+                <option>Ferramentas refinadas</option>
+                <option>Domínio do fogo</option>
+                <option>Armas avançadas</option>
+            </select>
+        </div>
+
+        <div class="vs">⚔️</div>
+
+        <!-- ===================== TIME 2 ===================== -->
+        <div class="card">
+            <h2>⚔️ Time 2</h2>
+
+            <label>Espécie</label>
+            <select id="especie2">
+                <option>Homo sapiens</option>
+                <option>Neandertal</option>
+                <option>Homo erectus</option>
+                <option>Homo habilis</option>
+                <option>Denisovano</option>
+            </select>
+
+            <label>Quantidade</label>
+            <input type="number" id="qtd2" value="100" min="1" max="1000">
+
+            <label>Arma</label>
+            <select id="arma2">
+                <option>Nenhuma</option>
+                <option>Pedra</option>
+                <option>Clava</option>
+                <option>Lança</option>
+                <option>Machado de Pedra</option>
+                <option>Arco</option>
+            </select>
+
+            <label>Estratégia</label>
+            <select id="estrategia2">
+                <option>Ataque Frontal</option>
+                <option>Defesa</option>
+                <option>Emboscada</option>
+                <option>Guerrilha</option>
+                <option>Cerco</option>
+            </select>
+
+            <label>Treinamento</label>
+            <select id="treino2">
+                <option>Nenhum</option>
+                <option>Básico</option>
+                <option>Caçadores</option>
+                <option>Guerreiros</option>
+                <option>Veteranos</option>
+            </select>
+
+            <label>Moral</label>
+            <select id="moral2">
+                <option>Muito Baixa</option>
+                <option>Baixa</option>
+                <option>Normal</option>
+                <option>Alta</option>
+                <option>Extremamente Alta</option>
+            </select>
+
+            <label>Líder</label>
+            <select id="lider2">
+                <option>Sem líder</option>
+                <option>Líder comum</option>
+                <option>Grande estrategista</option>
+            </select>
+
+            <label>Alimentação</label>
+            <select id="alimentacao2">
+                <option>Famintos</option>
+                <option>Normal</option>
+                <option>Bem alimentados</option>
+            </select>
+
+            <label>Tecnologia</label>
+            <select id="tecnologia2">
+                <option>Ferramentas simples</option>
+                <option>Ferramentas refinadas</option>
+                <option>Domínio do fogo</option>
+                <option>Armas avançadas</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- ===================== GLOBAL ===================== -->
+    <div style="margin-top:30px">
+
+        <label><strong>🌍 Terreno</strong></label>
+        <select id="terreno">
+            <option>Planície</option>
+            <option>Floresta</option>
+            <option>Montanha</option>
+            <option>Caverna</option>
+            <option>Pântano</option>
+            <option>Neve</option>
+        </select>
+
+        <br><br>
+
+        <label><strong>🌦️ Clima</strong></label>
+        <select id="clima">
+            <option>Sol</option>
+            <option>Chuva</option>
+            <option>Tempestade</option>
+            <option>Neblina</option>
+            <option>Neve</option>
+        </select>
+
+    </div>
+
+    <button onclick="batalhar()">⚔️ BATALHAR ⚔️</button>
+
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
